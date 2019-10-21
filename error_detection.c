@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2019
-** infin_add : error_detection
+** infin_add : error_detection.c
 ** File description:
 ** Fonctions used to detect errors in infin_add
 */

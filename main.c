@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2019
-** infin_add : main
+** infin_add : main.c
 ** File description:
 ** A program that performs an infinite addition.
 */
