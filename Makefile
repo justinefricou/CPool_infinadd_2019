@@ -5,7 +5,8 @@
 ## A Makefile that compiles infin_add
 ##
 
-SRC	=	main.c 	
+SRC	=	main.c 	\
+		error_detection.c
 
 OBJ	=	$(SRC:.c=.o)
 
