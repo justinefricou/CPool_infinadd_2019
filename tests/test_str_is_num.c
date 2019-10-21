@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2019
-** infin_add : tests_str_is_num.c
+** infin_add : test_str_is_num.c
 ** File description:
 ** Tests for str_is_num
 */

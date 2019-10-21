@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2019
-** infin_add : tests_is_digit.c
+** infin_add : test_is_digit.c
 ** File description:
 ** Tests for is_digit
 */
