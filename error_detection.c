@@ -7,8 +7,6 @@
 
 #include <stdlib.h>
 
-int my_strlen(char *str);
-
 int is_digit(char c)
 {
     if (c < '0' || '9' < c)
