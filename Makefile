@@ -17,7 +17,8 @@ SRC_TESTS =	error_detection.c 	\
 			my_strlen.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
-			tests/test_str_is_num.c 	
+			tests/test_str_is_num.c 	\
+			tests/test_detect_error_input.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
