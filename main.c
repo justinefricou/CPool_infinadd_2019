@@ -12,7 +12,18 @@ int my_strlen(char *str);
 
 void ascii_to_digits(char *str)
 {
-    //!
+    for (int i = 0; str[i] != '\0'; i++) {
+        if ('0' <= str[i] && str[i] <= '9')
+            str[i] = str[i] - 48;
+    }
+}
+
+void digits_to_ascii(char *str)
+{
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (0 <= str[i] && str[i] <= 9)
+            str[i] = str[i] + 48;
+    }
 }
 
 int max(int a, int b)
@@ -29,7 +40,16 @@ void add_strings(char *number1, char *number2, char *result)
 
 void display_result(char *result)
 {
-    //!
+    int i = 0;
+
+    digits_to_ascii(result);
+    if (result[i] == '-')
+        write(1, &(result[i]), 1);
+    for (i = 0; result[i] <= '0'; i++);
+    while (result[i] != '\0') {
+        write(1, &(result[i]), i);
+        i++;
+    }
 }
 
 int main(int argc, char **argv)
