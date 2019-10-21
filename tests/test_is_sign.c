@@ -17,7 +17,7 @@ Test(is_sign, normal_case)
 
 Test(is_sign, not_a_sign_case)
 {
-    cr_expect_eq(is_sign('f'), 1);
-    cr_expect_eq(is_sign('\0'), 1);
-    cr_expect_eq(is_sign('\n'), 1);
+    cr_expect_eq(is_sign('f'), 0);
+    cr_expect_eq(is_sign('\0'), 0);
+    cr_expect_eq(is_sign('\n'), 0);
 }
