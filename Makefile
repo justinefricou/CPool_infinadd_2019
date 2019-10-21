@@ -6,21 +6,22 @@
 ##
 
 SRC	=	main.c 	\
-		error_detection.c
+		error_detection.c 	\
+		my_strlen.c 	
 
-OBJ	=	$(SRC:.c=.o)
+OBJ	=	$(SRC:.c=.o)	
 
-NAME	=	infin_add
+NAME	=	infin_add	
 
-all:	$(NAME)
+all:	$(NAME)	
 
-$(NAME):	$(OBJ)
-			gcc -o $(NAME) $(OBJ)
+$(NAME):	$(OBJ)	
+			gcc -o $(NAME) $(OBJ)	
 
-clean:
-		rm -f $(OBJ)
+clean:	
+		rm -f $(OBJ)	
 
-fclean: clean
-		rm -f $(NAME)
+fclean: clean	
+		rm -f $(NAME)	
 
-re:	fclean all
+re:	fclean all	
