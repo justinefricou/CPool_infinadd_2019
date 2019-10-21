@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2019
-** infin_add : tests_is_digit.c
+** infin_add : tests_str_is_num.c
 ** File description:
-** Tests for is_digit
+** Tests for str_is_num
 */
 
 #include <criterion/criterion.h>
