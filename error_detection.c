@@ -14,12 +14,24 @@ int is_digit(char c)
     return (1);
 }
 
+int is_sign(char c)
+{
+    if (c == '-' || c == '+') {
+        return (1);
+    }
+    return (0);
+}
+
 int str_is_num(char *str)
 {
+    if (str[0] == '\0')
+        return (0);
+    else if (is_sign(str[0]) && str[1] == '\0')
+        return (0);
     for (int i = 0; str[i] != '\0'; i++) {
-        if (i == 0 && (str[i] != '-' && str[i] != '+' && !is_digit(str[i])))
+        if (i == 0 && (!is_sign(str[i]) && !is_digit(str[i])))
             return (0);
-        else if (!is_digit(str[i]))
+        else if (i != 0 && !is_digit(str[i]))
             return (0);
     }
     return (1);
