@@ -21,7 +21,8 @@ SRC_TESTS =	error_detection.c 	\
 			tests/test_detect_error_input_normal_cases.c 	\
 			tests/test_detect_error_input_wrong_cases.c 	\
 			tests/test_ascii_to_digits.c 	\
-			tests/test_digits_to_ascii.c 	
+			tests/test_digits_to_ascii.c 	\
+			tests/test_my_strlen.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 

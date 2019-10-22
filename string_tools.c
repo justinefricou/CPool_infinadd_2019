@@ -5,7 +5,7 @@
 ** Several functions using strings for infin_add project
 */
 
-int my_strlen(char const *str)
+int my_strlen(char *str)
 {
     int length = 0;
 
