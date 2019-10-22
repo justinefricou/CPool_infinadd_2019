@@ -6,10 +6,10 @@
 */
 
 #include <stdlib.h>
-#include <unistd.h>
 #include "include/error_detection.h"
 #include "include/math_tools.h"
 #include "include/string_tools.h"
+#include "include/display.h"
 
 void add_2digits(char *res_dozen, char *res_unit, char *digit1, char *digit2)
 {
@@ -48,12 +48,17 @@ char *add_strings(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
         add_2digits(&(res[i_res - 1]), &(res[i_res]), &(nbr1[i1]), &(nbr2[i2]));
         decrement_indexes(&i1, &i2, &i_res);
     }
-    if (i1 < 0 && i2 >= 0) {
+    while (i2 >= 0) {
         add_1digit(&(res[i_res - 1]), &(res[i_res]), &(nbr2[i2]));
         decrement_indexes(&i1, &i2, &i_res);
-    } else if (i2 < 0 && i1 >= 0) {
+    }
+    while (i1 >= 0) {
         add_1digit(&(res[i_res - 1]), &(res[i_res]), &(nbr1[i1]));
         decrement_indexes(&i1, &i2, &i_res);
+    }
+    while (i_res > 0) {
+        res[i_res] = 0;
+        i_res--;
     }
     digits_to_ascii(res, length_result);
     return (res);
@@ -80,19 +85,6 @@ char *get_result(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
         //! mettre le bon signe
     }*/
     return (result);
-}
-
-void display_result(char *result)
-{
-    int i = 0;
-
-    if (result[i] == '-')
-        write(1, &(result[i]), 1);
-    for (i = 0; result[i] <= '0'; i++);
-    while (result[i] != '\0') {
-        write(1, &(result[i]), i);
-        i++;
-    }
 }
 
 int main(int argc, char **argv)
