@@ -11,13 +11,7 @@ int detect_input_errors(int argc, char **argv);
 int my_strlen(char *str);
 void ascii_to_digits(char *str);
 void digits_to_ascii(char *str, int length_str);
-
-int max(int a, int b)
-{
-    if (a < b)
-        return (b);
-    return (a);
-}
+int max(int a, int b);
 
 void add_strings(char *number1, char *number2, char *result)
 {

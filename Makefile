@@ -15,6 +15,7 @@ NAME	=	infin_add
 
 SRC_TESTS =	error_detection.c 	\
 			string_tools.c 	\
+			math_tools.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
 			tests/test_str_is_num.c 	\
@@ -22,7 +23,8 @@ SRC_TESTS =	error_detection.c 	\
 			tests/test_detect_error_input_wrong_cases.c 	\
 			tests/test_ascii_to_digits.c 	\
 			tests/test_digits_to_ascii.c 	\
-			tests/test_my_strlen.c 	
+			tests/test_my_strlen.c 	\
+			tests/test_max.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
