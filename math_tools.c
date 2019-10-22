@@ -13,3 +13,10 @@ int max(int a, int b)
         return (b);
     return (a);
 }
+
+char get_sign(char *nbr)
+{
+    if(nbr[0] == '-')
+        return ('-');
+    return ('+');
+}
