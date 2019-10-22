@@ -23,9 +23,9 @@ void ascii_to_digits(char *str)
     }
 }
 
-void digits_to_ascii(char *str, int length_str);
+void digits_to_ascii(char *str, int length_str)
 {
-    for (int i = 0; i <= length_str; i++) {
+    for (int i = 0; i < length_str; i++) {
         if (0 <= str[i] && str[i] <= 9)
             str[i] = str[i] + 48;
     }
