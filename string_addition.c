@@ -6,7 +6,7 @@
 */
 
 #include <stdlib.h>
-#include "string_addition.h"
+#include "include/string_addition.h"
 
 void add_2digits(char *res_dozen, char *res_unit, char *digit1, char *digit2)
 {
