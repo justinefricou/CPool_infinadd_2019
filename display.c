@@ -16,7 +16,7 @@ void display_result(char *result)
         write(1, &(result[i]), 1);
     for (i = 0; result[i] <= '0'; i++);
     while (result[i] != '\0') {
-        write(1, &(result[i]), i);
+        write(1, &(result[i]), 1);
         i++;
     }
 }

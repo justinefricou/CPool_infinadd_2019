@@ -30,7 +30,8 @@ SRC_TESTS =	error_detection.c 	\
 			tests/test_digits_to_ascii.c 	\
 			tests/test_my_strlen.c 	\
 			tests/test_max.c 	\
-			tests/test_get_sign.c 	
+			tests/test_get_sign.c 	\
+			tests/test_display_result.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
@@ -55,4 +56,4 @@ re:	fclean all
 
 tests_run: 	$(OBJ_TESTS)	
 			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion	
-			./$(NAME_TESTS)	
+			./$(NAME_TESTS)	| cat -e
