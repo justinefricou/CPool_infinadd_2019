@@ -8,6 +8,8 @@
 #ifndef DEF_DISPLAY
 #define DEF_DISPLAY
 
-void display_result(char *result);
+#include "number.h"
+
+void display_result(number result);
 
 #endif // DEF_DISPLAY

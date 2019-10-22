@@ -56,4 +56,4 @@ re:	fclean all
 
 tests_run: 	$(OBJ_TESTS)	
 			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion	
-			./$(NAME_TESTS)	| cat -e
+			./$(NAME_TESTS)

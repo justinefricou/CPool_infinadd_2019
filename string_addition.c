@@ -8,7 +8,9 @@
 #include <stdlib.h>
 #include "include/string_addition.h"
 
-void add_2digits(char *res_dozen, char *res_unit, char *digit1, char *digit2)
+
+
+/*void add_2digits(char *res_dozen, char *res_unit, char *digit1, char *digit2)
 {
     res_dozen[0] = res_dozen[0] + (res_unit[0] + digit1[0] + digit2[0]) / 10;
     res_unit[0] = (res_unit[0] + digit1[0] + digit2[0]) % 10;
@@ -61,11 +63,11 @@ char *add_strings(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
     return (res);
 }
 
-/*char *sub_strings(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
+char *sub_strings(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
 {
     //!
     return (result);
-}*/
+}
 
 char *get_result(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
 {
@@ -77,9 +79,9 @@ char *get_result(char *nbr1, char *nbr2, int length_nbr1, int length_nbr2)
     } else if (get_sign(nbr1) == '-' && get_sign(nbr2) == '-') {
         result = add_strings(nbr1, nbr2, length_nbr1, length_nbr2);
         result[0] = '-';
-    } /*else {
+    } else {
         result = sub_strings(nbr1, nbr2, length_nbr1, length_nbr2);
         //! mettre le bon signe
-    }*/
+    }
     return (result);
-}
+}*/

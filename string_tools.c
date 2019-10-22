@@ -6,6 +6,7 @@
 */
 
 #include "include/string_tools.h"
+#include "include/number.h"
 
 int my_strlen(char *str)
 {
@@ -25,10 +26,10 @@ void ascii_to_digits(char *str)
     }
 }
 
-void digits_to_ascii(char *str, int length_str)
+void digits_to_ascii(number *nbr)
 {
-    for (int i = 0; i < length_str; i++) {
-        if (0 <= str[i] && str[i] <= 9)
-            str[i] = str[i] + 48;
+    for (int i = 0; i < nbr->length; i++) {
+        if (0 <= (nbr->str)[i] && (nbr->str)[i] <= 9)
+            (nbr->str)[i] = (nbr->str)[i] + 48;
     }
 }

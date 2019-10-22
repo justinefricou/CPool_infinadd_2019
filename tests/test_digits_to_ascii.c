@@ -6,22 +6,25 @@
 */
 
 #include <criterion/criterion.h>
+#include "../include/number.h"
 
-void digits_to_ascii(char *str, int length_str);
+void digits_to_ascii(number *nbr);
 
 Test(digits_to_ascii, several_digits_case)
 {
-    char *actual = NULL;
+    number *nbr;
     char *expected = "0123456789";
 
-    actual = malloc(sizeof(char) * 11);
+    nbr->str = malloc(sizeof(char) * 11);
     for (int i = 0; i < 10; i++) {
-        actual[i] = (char)i;
+        (nbr->str)[i] = (char)i;
     }
-    actual[10] = '\0';
-    digits_to_ascii(actual, 10);
-    cr_expect_str_eq(actual, expected);
-    free(actual);
+    (nbr->str)[10] = '\0';
+    nbr->length = 10;
+    digits_to_ascii(nbr);
+    cr_expect_str_eq(nbr->str, expected);
+    free(nbr->str);
+    free(nbr);
 }
 
 Test(digits_to_ascii, single_digit_case)

@@ -8,8 +8,10 @@
 #ifndef DEF_STRING_TOOLS
 #define DEF_STRING_TOOLS
 
+#include "number.h"
+
 int my_strlen(char *str);
 void ascii_to_digits(char *str);
-void digits_to_ascii(char *str, int length_str);
+void digits_to_ascii(number *nbr);
 
 #endif // DEF_STRING_TOOLS
