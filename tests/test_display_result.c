@@ -7,7 +7,6 @@
 
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
-#include <unistd.h>
 
 void display_result(char *result);
 
