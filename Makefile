@@ -8,7 +8,8 @@
 SRC	=	main.c 	\
 		error_detection.c 	\
 		math_tools.c 	\
-		string_tools.c 	
+		string_tools.c 	\
+		display.c 	
 
 OBJ	=	$(SRC:.c=.o)	
 
@@ -17,6 +18,7 @@ NAME	=	infin_add
 SRC_TESTS =	error_detection.c 	\
 			string_tools.c 	\
 			math_tools.c 	\
+			display.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
 			tests/test_str_is_num.c 	\
