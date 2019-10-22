@@ -41,6 +41,8 @@ int detect_input_errors(int argc, char **argv)
 {
     if (argc != 3)
         return (EXIT_FAILURE);
+    if (argv[1] == NULL || argv[2] == NULL)
+        return (EXIT_FAILURE);
     if (!(str_is_num(argv[1]) && str_is_num(argv[2])))
         return (EXIT_FAILURE);
     return (EXIT_SUCCESS);

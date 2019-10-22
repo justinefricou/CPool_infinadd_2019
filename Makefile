@@ -18,7 +18,8 @@ SRC_TESTS =	error_detection.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
 			tests/test_str_is_num.c 	\
-			tests/test_detect_error_input.c 	
+			tests/test_detect_error_input.c ##	\
+		##	tests/test_ascii_to_digits.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 

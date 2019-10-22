@@ -53,13 +53,16 @@ Test(detect_error_input, wrong_number_of_args_case)
     cr_expect_eq(detect_input_errors(5, argv4), EXIT_FAILURE);
 }
 
-Test(detect_error_input, empty_string_case)
+Test(detect_error_input, empty_or_null_string_case)
 {
-    char str[1];
+    char str1[1];
+    char *str2 = NULL;
 
-    str[0] = '\0';
-    char *argv[3] = {"a.out", "468", str};
-    cr_expect_eq(detect_input_errors(3, argv), EXIT_FAILURE);
+    str1[0] = '\0';
+    char *argv1[3] = {"a.out", "468", str1};
+    char *argv2[3] = {"a.out", "654", str2};
+    cr_expect_eq(detect_input_errors(3, argv1), EXIT_FAILURE);
+    cr_expect_eq(detect_input_errors(3, argv2), EXIT_FAILURE);
 }
 
 Test(detect_error_input, letters_in_strings_case)
