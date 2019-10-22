@@ -23,10 +23,9 @@ void ascii_to_digits(char *str)
     }
 }
 
-void digits_to_ascii(char *str)
+void digits_to_ascii(char *str, int length_str);
 {
-    // changer la condition de fin ?
-    for (int i = 0; str[i] != '\0'; i++) {
+    for (int i = 0; i <= length_str; i++) {
         if (0 <= str[i] && str[i] <= 9)
             str[i] = str[i] + 48;
     }

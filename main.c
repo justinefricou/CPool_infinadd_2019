@@ -10,7 +10,7 @@
 int detect_input_errors(int argc, char **argv);
 int my_strlen(char *str);
 void ascii_to_digits(char *str);
-void digits_to_ascii(char *str);
+void digits_to_ascii(char *str, int length_str);
 
 int max(int a, int b)
 {
@@ -25,11 +25,11 @@ void add_strings(char *number1, char *number2, char *result)
     // remplir d'espaces si trop de place dans la chaîne
 }
 
-void display_result(char *result)
+void display_result(char *result, int length_result)
 {
     int i = 0;
 
-    digits_to_ascii(result);
+    digits_to_ascii(result, length_result);
     if (result[i] == '-')
         write(1, &(result[i]), 1);
     for (i = 0; result[i] <= '0'; i++);
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
     if (result == NULL)
         return (EXIT_FAILURE);
     add_strings(argv[1], argv[2], result);
-    display_result(result);
+    display_result(result, length_result);
     free(result);
     return (EXIT_SUCCESS);
 }
