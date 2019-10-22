@@ -9,7 +9,8 @@ SRC	=	main.c 	\
 		error_detection.c 	\
 		math_tools.c 	\
 		string_tools.c 	\
-		display.c 	
+		display.c 	\
+		string_addition.c 	
 
 OBJ	=	$(SRC:.c=.o)	
 
@@ -19,6 +20,7 @@ SRC_TESTS =	error_detection.c 	\
 			string_tools.c 	\
 			math_tools.c 	\
 			display.c 	\
+			string_addition.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
 			tests/test_str_is_num.c 	\
