@@ -5,6 +5,8 @@
 ** Several math functions
 */
 
+#include "include/math_tools.h"
+
 int max(int a, int b)
 {
     if (a < b)

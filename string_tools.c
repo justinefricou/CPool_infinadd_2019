@@ -5,6 +5,8 @@
 ** Several functions using strings for infin_add project
 */
 
+#include "include/string_tools.h"
+
 int my_strlen(char *str)
 {
     int length = 0;

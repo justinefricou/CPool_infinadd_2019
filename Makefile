@@ -7,11 +7,12 @@
 
 SRC	=	main.c 	\
 		error_detection.c 	\
-		string_tools.c	
+		math_tools.c 	\
+		string_tools.c 	
 
 OBJ	=	$(SRC:.c=.o)	
 
-NAME	=	infin_add	
+NAME	=	infin_add 	
 
 SRC_TESTS =	error_detection.c 	\
 			string_tools.c 	\
@@ -28,7 +29,7 @@ SRC_TESTS =	error_detection.c 	\
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
-NAME_TESTS = 	tests_infin_add	
+NAME_TESTS = 	tests_infin_add 	
 
 all:	$(NAME)	
 
@@ -42,11 +43,11 @@ clean:
 fclean: clean	
 		rm -f $(NAME)	
 		rm -f $(NAME_TESTS)	
-		rm -f *.gcno 	
-		rm -f *.gcda 	
+		rm -f *.gcno	
+		rm -f *.gcda	
 
 re:	fclean all	
 
-tests_run: 	$(OBJ_TESTS) 	
-			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion 	
+tests_run: 	$(OBJ_TESTS)	
+			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion	
 			./$(NAME_TESTS)	

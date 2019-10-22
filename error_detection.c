@@ -6,6 +6,7 @@
 */
 
 #include <stdlib.h>
+#include "include/error_detection.h"
 
 int is_digit(char c)
 {

@@ -6,12 +6,10 @@
 */
 
 #include <stdlib.h>
-
-int detect_input_errors(int argc, char **argv);
-int my_strlen(char *str);
-void ascii_to_digits(char *str);
-void digits_to_ascii(char *str, int length_str);
-int max(int a, int b);
+#include <unistd.h>
+#include "include/error_detection.h"
+#include "include/math_tools.h"
+#include "include/string_tools.h"
 
 void add_strings(char *number1, char *number2, char *result)
 {
