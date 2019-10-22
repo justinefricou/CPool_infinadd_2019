@@ -7,19 +7,19 @@
 
 SRC	=	main.c 	\
 		error_detection.c 	\
-		my_strlen.c 	
+		string_tools.c	
 
 OBJ	=	$(SRC:.c=.o)	
 
 NAME	=	infin_add	
 
 SRC_TESTS =	error_detection.c 	\
-			my_strlen.c 	\
+			string_tools.c 	\
 			tests/test_is_digit.c 	\
 			tests/test_is_sign.c 	\
 			tests/test_str_is_num.c 	\
-			tests/test_detect_error_input.c ##	\
-		##	tests/test_ascii_to_digits.c 	
+			tests/test_detect_error_input.c 	\
+			tests/test_ascii_to_digits.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 

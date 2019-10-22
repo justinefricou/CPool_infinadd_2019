@@ -9,22 +9,8 @@
 
 int detect_input_errors(int argc, char **argv);
 int my_strlen(char *str);
-
-void ascii_to_digits(char *str)
-{
-    for (int i = 0; str[i] != '\0'; i++) {
-        if ('0' <= str[i] && str[i] <= '9')
-            str[i] = str[i] - 48;
-    }
-}
-
-void digits_to_ascii(char *str)
-{
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (0 <= str[i] && str[i] <= 9)
-            str[i] = str[i] + 48;
-    }
-}
+void ascii_to_digits(char *str);
+void digits_to_ascii(char *str);
 
 int max(int a, int b)
 {
@@ -36,6 +22,7 @@ int max(int a, int b)
 void add_strings(char *number1, char *number2, char *result)
 {
     //!
+    // remplir d'espaces si trop de place dans la chaîne
 }
 
 void display_result(char *result)
