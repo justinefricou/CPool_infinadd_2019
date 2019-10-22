@@ -25,7 +25,8 @@ SRC_TESTS =	error_detection.c 	\
 			tests/test_ascii_to_digits.c 	\
 			tests/test_digits_to_ascii.c 	\
 			tests/test_my_strlen.c 	\
-			tests/test_max.c 	
+			tests/test_max.c 	\
+			tests/test_get_sign.c 	
 
 OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
