@@ -37,7 +37,7 @@ int main(int argc, char **argv)
     number nbr1 = {argv[1], my_strlen(argv[1])};
     number nbr2 = {argv[2], my_strlen(argv[2])};
 
-    if (detect_input_errors(argc, argv) == EXIT_FAILURE) // exit(EXIT_FAILURE) ?
+    if (detect_input_errors(argc, argv) == EXIT_FAILURE)
         return (EXIT_FAILURE);
     ascii_to_digits(nbr1.str);
     ascii_to_digits(nbr2.str);
