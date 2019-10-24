@@ -10,6 +10,6 @@
 
 #include "number.h"
 
-void display_result(number result);
+int display_result(number result);
 
 #endif // DEF_DISPLAY

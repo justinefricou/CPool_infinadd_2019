@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-int my_strlen(char *str);
+#include "../include/string_tools.h"
 
 Test(my_strlen, normal_case)
 {

@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-int is_sign(char c);
+#include "../include/error_detection.h"
 
 Test(is_sign, normal_case)
 {

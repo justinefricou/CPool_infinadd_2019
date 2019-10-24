@@ -7,21 +7,20 @@
 
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
+#include "../include/display.h"
 #include "../include/number.h"
-
-void display_result(number result);
 
 Test(display_result, full_cases, .init=cr_redirect_stdout)
 {
     number nbr1 = {"-6741254", 8};
     number nbr2 = {"-5", 2};
     number nbr3 = {"+5", 2};
-    number nbr4 = {"+892155", 7};
+    number nbr4 = {"+892150", 7};
     display_result(nbr1);
     display_result(nbr2);
     display_result(nbr3);
     display_result(nbr4);
-    cr_assert_stdout_eq_str("-6741254-55892155");
+    cr_assert_stdout_eq_str("-6741254-55892150");
 }
 
 Test(display_result, not_full_cases, .init=cr_redirect_stdout)

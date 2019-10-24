@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-int max(int a, int b);
+#include "../include/math_tools.h"
 
 Test(max, different_numbers_case)
 {

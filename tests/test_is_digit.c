@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-int is_digit(char c);
+#include "../include/error_detection.h"
 
 Test(is_digit, case_digit)
 {

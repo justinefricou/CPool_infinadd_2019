@@ -1,59 +1,58 @@
 ##
 ## EPITECH PROJECT, 2019
-## Makefile : infin_add
+## Makefile
 ## File description:
-## A Makefile that compiles infin_add
+## A Makefile that compiles cat
 ##
 
+NAME	=		infin_add
+
 SRC	=	main.c 	\
-		error_detection.c 	\
 		math_tools.c 	\
+		string_addition.c 	\
 		string_tools.c 	\
-		display.c 	\
-		string_addition.c 	
+		error_detection.c 	\
+		display.c
 
-OBJ	=	$(SRC:.c=.o)	
+OBJ	=	$(SRC:.c=.o)
 
-NAME	=	infin_add 	
+NAME_TESTS = 	test_infin_add
 
-SRC_TESTS =	error_detection.c 	\
-			string_tools.c 	\
-			math_tools.c 	\
-			display.c 	\
-			string_addition.c 	\
-			tests/test_is_digit.c 	\
-			tests/test_is_sign.c 	\
-			tests/test_str_is_num.c 	\
-			tests/test_detect_error_input_normal_cases.c 	\
-			tests/test_detect_error_input_wrong_cases.c 	\
-			tests/test_ascii_to_digits.c 	\
-			tests/test_digits_to_ascii.c 	\
-			tests/test_my_strlen.c 	\
-			tests/test_max.c 	\
-			tests/test_get_sign.c 	\
-			tests/test_display_result.c 	
+SRC_TESTS = 	math_tools.c 	\
+				string_tools.c 	\
+				error_detection.c 	\
+				display.c 	\
+				tests/test_str_is_num.c 	\
+				tests/test_my_strlen.c 	\
+				tests/test_max.c 	\
+				tests/test_is_sign.c 	\
+				tests/test_is_digit.c 	\
+				tests/test_get_sign.c 	\
+				tests/test_display_result.c 	\
+				tests/test_digits_to_ascii.c 	\
+				tests/test_ascii_to_digits.c 	\
+				tests/test_detect_error_input_no_errors.c 	\
+				tests/test_detect_error_input_errors.c
 
-OBJ_TESTS	=	$(SRC_TESTS:.c=.o)	
 
-NAME_TESTS = 	tests_infin_add 	
 
-all:	$(NAME)	
+all:	$(NAME)
 
-$(NAME):	$(OBJ)	
-			gcc -o $(NAME) $(OBJ)	
+$(NAME):	$(OBJ)
+			gcc -o $(NAME) $(OBJ)
 
-clean:	
-		rm -f $(OBJ)	
-		rm -f $(OBJ_TESTS)	
+clean:
+		rm -f $(OBJ)
+		rm -f $(OBJ_TESTS)
+		rm -f *.gcno
+		rm -f *.gcda
 
-fclean: clean	
-		rm -f $(NAME)	
-		rm -f $(NAME_TESTS)	
-		rm -f *.gcno	
-		rm -f *.gcda	
+fclean: clean
+		rm -f $(NAME)
+		rm -f $(NAME_TESTS)
 
-re:	fclean all	
+re:	fclean all
 
-tests_run: 	$(OBJ_TESTS)	
-			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion	
+tests_run: 	$(OBJ_TESTS)
+			gcc -o $(NAME_TESTS) $(SRC_TESTS) --coverage -lcriterion
 			./$(NAME_TESTS)

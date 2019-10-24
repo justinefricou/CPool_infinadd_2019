@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-void ascii_to_digits(char *str);
+#include "../include/string_tools.h"
 
 Test(ascii_to_digits, normal_case)
 {

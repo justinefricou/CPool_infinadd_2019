@@ -6,8 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-
-char get_sign(char *nbr);
+#include "../include/math_tools.h"
 
 Test(get_sign, no_sign_case)
 {
