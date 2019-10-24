@@ -32,4 +32,5 @@ void digits_to_ascii(number *nbr)
         if (0 <= (nbr->str)[i] && (nbr->str)[i] <= 9)
             (nbr->str)[i] = (nbr->str)[i] + 48;
     }
+    (nbr->str)[nbr->length] = '\0';
 }

@@ -21,10 +21,11 @@ int main(int argc, char **argv)
     number nbr2 = {argv[2], my_strlen(argv[2])};
 
     if (detect_input_errors(argc, argv) == EXIT_FAILURE)
-        return (EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     ascii_to_digits(nbr1.str);
     ascii_to_digits(nbr2.str);
     result = get_result(nbr1, nbr2);
+    digits_to_ascii(result->str);
     display_result(*result);
     free_number(result);
     return (EXIT_SUCCESS);
