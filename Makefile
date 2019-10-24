@@ -12,7 +12,8 @@ SRC	=	main.c 	\
 		string_addition.c 	\
 		string_tools.c 	\
 		error_detection.c 	\
-		display.c
+		display.c 	\
+		numbers_tools.c
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -22,6 +23,7 @@ SRC_TESTS = 	math_tools.c 	\
 				string_tools.c 	\
 				error_detection.c 	\
 				display.c 	\
+				numbers_tools.c 	\
 				tests/test_str_is_num.c 	\
 				tests/test_my_strlen.c 	\
 				tests/test_max.c 	\
@@ -32,7 +34,8 @@ SRC_TESTS = 	math_tools.c 	\
 				tests/test_digits_to_ascii.c 	\
 				tests/test_ascii_to_digits.c 	\
 				tests/test_detect_error_input_no_errors.c 	\
-				tests/test_detect_error_input_errors.c
+				tests/test_detect_error_input_errors.c 	\
+				tests/test_create_number.c
 
 
 

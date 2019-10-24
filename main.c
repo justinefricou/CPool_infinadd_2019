@@ -11,25 +11,8 @@
 #include "include/string_tools.h"
 #include "include/display.h"
 #include "include/string_addition.h"
+#include "include/numbers_tools.h"
 #include "include/number.h"
-
-number *create_number(char *str)
-{
-    number *nbr = NULL;
-
-    nbr = malloc(sizeof(number));
-    if (nbr == NULL)
-        exit(EXIT_FAILURE);
-    nbr->str = str;
-    nbr->length = my_strlen(nbr->str);
-    return (nbr);
-}
-
-void free_number(number *nbr)
-{
-    free(nbr->str);
-    free(nbr);
-}
 
 int main(int argc, char **argv)
 {
