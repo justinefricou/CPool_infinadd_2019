@@ -16,6 +16,7 @@ Test(display_result, full_cases, .init=cr_redirect_stdout)
     number nbr2 = {"-5", 2};
     number nbr3 = {"+5", 2};
     number nbr4 = {"+892150", 7};
+
     display_result(nbr1);
     display_result(nbr2);
     display_result(nbr3);
@@ -29,6 +30,7 @@ Test(display_result, not_full_cases, .init=cr_redirect_stdout)
     number nbr2 = {"-06", 3};
     number nbr3 = {"+00068545", 9};
     number nbr4 = {"+06", 3};
+
     display_result(nbr1);
     display_result(nbr2);
     display_result(nbr3);
@@ -42,6 +44,7 @@ Test(display_result, not_full_cases, .init=cr_redirect_stdout)
     number nbr2 = {"-0", 2};
     number nbr3 = {"+00000", 6};
     number nbr4 = {"+0", 2};
+
     display_result(nbr1);
     display_result(nbr2);
     display_result(nbr3);
