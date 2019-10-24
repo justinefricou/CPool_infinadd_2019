@@ -8,8 +8,6 @@
 #ifndef DEF_ERROR_DETECTION
 #define DEF_ERROR_DETECTION
 
-int is_digit(char c);
-int is_sign(char c);
 int str_is_num(char *str);
 int detect_input_errors(int argc, char **argv);
 

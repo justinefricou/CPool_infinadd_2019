@@ -7,21 +7,7 @@
 
 #include <stdlib.h>
 #include "include/error_detection.h"
-
-int is_digit(char c)
-{
-    if (c < '0' || '9' < c)
-        return (0);
-    return (1);
-}
-
-int is_sign(char c)
-{
-    if (c == '-' || c == '+') {
-        return (1);
-    }
-    return (0);
-}
+#include "include/string_tools.h"
 
 int str_is_num(char *str)
 {

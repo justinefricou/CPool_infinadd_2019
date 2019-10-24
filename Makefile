@@ -23,6 +23,7 @@ SRC_TESTS = 	math_tools.c 	\
 				string_tools.c 	\
 				error_detection.c 	\
 				display.c 	\
+				string_addition.c 	\
 				numbers_tools.c 	\
 				tests/test_str_is_num.c 	\
 				tests/test_my_strlen.c 	\
@@ -35,7 +36,8 @@ SRC_TESTS = 	math_tools.c 	\
 				tests/test_ascii_to_digits.c 	\
 				tests/test_detect_error_input_no_errors.c 	\
 				tests/test_detect_error_input_errors.c 	\
-				tests/test_create_number.c
+				tests/test_create_number.c 	\
+				tests/test_find_max_abs.c
 
 
 

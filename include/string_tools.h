@@ -10,6 +10,8 @@
 
 #include "number.h"
 
+int is_digit(char c);
+int is_sign(char c);
 int my_strlen(char *str);
 void ascii_to_digits(char *str);
 void digits_to_ascii(number *nbr);
