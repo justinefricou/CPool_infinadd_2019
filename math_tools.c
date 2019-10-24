@@ -15,7 +15,7 @@ int max(int a, int b)
     return (a);
 }
 
-int find_max_abs(number nbr1, number nbr2)
+int find_max_abs(number nbr1, number nbr2) //
 {
     int index1 = 0;
     int index2 = 0;
