@@ -49,8 +49,8 @@ void add_numbers(number nbr1, number nbr2, number *result)
         }
     }
 }
-
-number *get_result(number nbr1, number nbr2) // à tester
+ // à tester
+number *get_result(number nbr1, number nbr2)
 {
     number *result_n = NULL;
     char *result_s = NULL;
