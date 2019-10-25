@@ -10,7 +10,7 @@
 #include "include/string_addition.h"
 #include "include/number.h"
 
-void put_sign(number nbr1, number nbr2, number *result)
+void put_sign(number nbr1, number nbr2, number *result) // à tester
 {
     if (get_sign(nbr1.str) == get_sign(nbr2.str))
         result->str[0] = get_sign(nbr1.str);
