@@ -10,7 +10,7 @@
 
 #include "number.h"
 
-number *create_number(char *str);
+number *create_number(char *str, int nbr_length);
 void free_number(number *nbr);
 
 #endif // DEF_NUMBERS_TOOLS

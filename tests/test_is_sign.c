@@ -6,7 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/string_tools.h"
+#include "../include/math_tools.h"
 
 Test(is_sign, normal_case)
 {

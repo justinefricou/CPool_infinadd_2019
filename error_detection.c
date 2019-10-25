@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 #include "include/error_detection.h"
-#include "include/string_tools.h"
+#include "include/math_tools.h"
 
 int str_is_num(char *str)
 {

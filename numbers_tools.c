@@ -8,9 +8,8 @@
 #include <stdlib.h>
 #include "include/number.h"
 #include "include/numbers_tools.h"
-#include "include/string_tools.h"
 
-number *create_number(char *str)
+number *create_number(char *str, int nbr_length)
 {
     number *nbr = NULL;
 
@@ -18,7 +17,7 @@ number *create_number(char *str)
     if (nbr == NULL)
         exit(EXIT_FAILURE);
     nbr->str = str;
-    nbr->length = my_strlen(nbr->str);
+    nbr->length = nbr_length;
     return (nbr);
 }
 

@@ -11,8 +11,9 @@
 #include "number.h"
 
 int max(int a, int b);
-void skip_useless_char(number nbr, int *index);
 int find_max_abs(number nbr1, number nbr2);
 char get_sign(char *nbr);
+int is_digit(char c);
+int is_sign(char c);
 
 #endif // DEF_MATH_TOOLS

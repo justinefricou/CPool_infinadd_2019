@@ -6,22 +6,8 @@
 */
 
 #include "include/string_tools.h"
+#include "include/math_tools.h"
 #include "include/number.h"
-
-int is_digit(char c)
-{
-    if (c < '0' || '9' < c)
-        return (0);
-    return (1);
-}
-
-int is_sign(char c)
-{
-    if (c == '-' || c == '+') {
-        return (1);
-    }
-    return (0);
-}
 
 int my_strlen(char *str)
 {
@@ -31,6 +17,12 @@ int my_strlen(char *str)
         length++;
     }
     return (length);
+}
+
+void skip_useless_char(number nbr, int *index)
+{
+    for ( ; *index < nbr.length && is_sign((nbr.str)[*index]); (*index)++);
+    for ( ; *index < nbr.length && (nbr.str)[*index] == 0; (*index)++);
 }
 
 void ascii_to_digits(char *str)

@@ -13,7 +13,8 @@ SRC	=	main.c 	\
 		string_tools.c 	\
 		error_detection.c 	\
 		display.c 	\
-		numbers_tools.c
+		numbers_tools.c 	\
+		string_addition_abs_values.c
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -25,6 +26,7 @@ SRC_TESTS = 	math_tools.c 	\
 				display.c 	\
 				string_addition.c 	\
 				numbers_tools.c 	\
+				string_addition_abs_values.c 	\
 				tests/test_str_is_num.c 	\
 				tests/test_my_strlen.c 	\
 				tests/test_max.c 	\
@@ -37,9 +39,11 @@ SRC_TESTS = 	math_tools.c 	\
 				tests/test_detect_error_input_no_errors.c 	\
 				tests/test_detect_error_input_errors.c 	\
 				tests/test_create_number.c 	\
-				tests/test_find_max_abs.c
-
-
+				tests/test_find_max_abs.c 	\
+				tests/test_put_sign.c 	\
+				tests/test_add_absolute_values_unsigned.c 	\
+				tests/test_add_absolute_values_signed.c 	\
+				tests/test_add_absolute_values_zero.c
 
 all:	$(NAME)
 
