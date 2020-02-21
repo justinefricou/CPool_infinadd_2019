@@ -22,8 +22,8 @@ int display_result(number result)
     if ((result.str)[0] == '-')
         write(1, &((result.str)[0]), 1);
     for ( ; (result.str)[i] <= '0'; i++);
-    for ( ;(result.str)[i] != 0; i++) {
+    for ( ;(result.str)[i] != 0; i++)
         write(1, &((result.str)[i]), 1);
-    }
+    write(1, "\n", 1);
      return (0);
 }
