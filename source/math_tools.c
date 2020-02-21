@@ -5,9 +5,9 @@
 ** Several math functions
 */
 
-#include "include/number.h"
-#include "include/math_tools.h"
-#include "include/string_tools.h"
+#include "number.h"
+#include "math_tools.h"
+#include "string_tools.h"
 
 int max(int a, int b)
 {

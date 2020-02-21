@@ -6,7 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/math_tools.h"
+#include "math_tools.h"
 
 Test(get_sign, no_sign_case)
 {

@@ -5,9 +5,9 @@
 ** Several functions using strings for infin_add project
 */
 
-#include "include/string_tools.h"
-#include "include/math_tools.h"
-#include "include/number.h"
+#include "string_tools.h"
+#include "math_tools.h"
+#include "number.h"
 
 int my_strlen(char *str)
 {

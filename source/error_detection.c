@@ -6,8 +6,8 @@
 */
 
 #include <stdlib.h>
-#include "include/error_detection.h"
-#include "include/math_tools.h"
+#include "error_detection.h"
+#include "math_tools.h"
 
 int str_is_num(char *str)
 {

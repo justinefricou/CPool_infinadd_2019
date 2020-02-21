@@ -5,12 +5,12 @@
 ** Functions used to add or substract the absolute values of the strings
 */
 
-#include "include/math_tools.h"
-#include "include/string_addition.h"
-#include "include/numbers_tools.h"
-#include "include/string_tools.h"
-#include "include/string_addition_abs_values.h"
-#include "include/number.h"
+#include "math_tools.h"
+#include "string_addition.h"
+#include "numbers_tools.h"
+#include "string_tools.h"
+#include "string_addition_abs_values.h"
+#include "number.h"
 
 void add_absolute_values(number nbr1, number nbr2, number *res)
 {
@@ -39,7 +39,7 @@ void add_absolute_values(number nbr1, number nbr2, number *res)
         (res->str)[indx_r] = (sum_digits) % 10;
     }
 }
- // à tester
+
 void substract_absolute_values(number nbr1, number nbr2, number *res)
 {
     int i_res = res->length - 1;

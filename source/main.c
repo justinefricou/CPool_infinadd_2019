@@ -6,13 +6,13 @@
 */
 
 #include <stdlib.h>
-#include "include/error_detection.h"
-#include "include/math_tools.h"
-#include "include/string_tools.h"
-#include "include/display.h"
-#include "include/string_addition.h"
-#include "include/numbers_tools.h"
-#include "include/number.h"
+#include "error_detection.h"
+#include "math_tools.h"
+#include "string_tools.h"
+#include "display.h"
+#include "string_addition.h"
+#include "numbers_tools.h"
+#include "number.h"
 
 int main(int argc, char **argv)
 {

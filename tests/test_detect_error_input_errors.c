@@ -7,7 +7,7 @@
 
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "../include/error_detection.h"
+#include "error_detection.h"
 
 Test(detect_error_input, wrong_number_of_args_case)
 {

@@ -7,10 +7,10 @@
 
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "../include/string_addition.h"
-#include "../include/numbers_tools.h"
-#include "../include/string_tools.h"
-#include "../include/number.h"
+#include "string_addition.h"
+#include "numbers_tools.h"
+#include "string_tools.h"
+#include "number.h"
 
 Test(put_sign, both_positive_case)
 {

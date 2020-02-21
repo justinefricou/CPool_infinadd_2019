@@ -6,12 +6,12 @@
 */
 
 #include <stdlib.h>
-#include "include/math_tools.h"
-#include "include/string_addition.h"
-#include "include/numbers_tools.h"
-#include "include/string_tools.h"
-#include "include/string_addition_abs_values.h"
-#include "include/number.h"
+#include "math_tools.h"
+#include "string_addition.h"
+#include "numbers_tools.h"
+#include "string_tools.h"
+#include "string_addition_abs_values.h"
+#include "number.h"
 
 void put_sign(number nbr1, number nbr2, number *result)
 {
@@ -31,7 +31,7 @@ void put_sign(number nbr1, number nbr2, number *result)
         }
     }
 }
-// à tester
+
 void add_numbers(number nbr1, number nbr2, number *result)
 {
     if (get_sign(nbr1.str) == get_sign(nbr2.str))
@@ -49,7 +49,7 @@ void add_numbers(number nbr1, number nbr2, number *result)
         }
     }
 }
- // à tester
+
 number *get_result(number nbr1, number nbr2)
 {
     number *result_n = NULL;

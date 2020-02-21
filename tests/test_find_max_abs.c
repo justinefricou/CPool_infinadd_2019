@@ -6,9 +6,9 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/math_tools.h"
-#include "../include/string_tools.h"
-#include "../include/number.h"
+#include "math_tools.h"
+#include "string_tools.h"
+#include "number.h"
 
 Test(test_find_max_abs, different_size_case)
 {

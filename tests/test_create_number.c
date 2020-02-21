@@ -7,8 +7,8 @@
 
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "../include/number.h"
-#include "../include/numbers_tools.h"
+#include "number.h"
+#include "numbers_tools.h"
 
 Test(test_create_number, no_sign_case)
 {

@@ -6,11 +6,11 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/string_addition.h"
-#include "../include/string_tools.h"
-#include "../include/numbers_tools.h"
-#include "../include/string_addition_abs_values.h"
-#include "../include/number.h"
+#include "string_addition.h"
+#include "string_tools.h"
+#include "numbers_tools.h"
+#include "string_addition_abs_values.h"
+#include "number.h"
 
 Test(add_absolute_values_zero_cases, both_zero_case)
 {

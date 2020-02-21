@@ -6,8 +6,8 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/string_tools.h"
-#include "../include/number.h"
+#include "string_tools.h"
+#include "number.h"
 
 Test(digits_to_ascii, several_digits_case)
 {

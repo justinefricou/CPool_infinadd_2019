@@ -6,7 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/error_detection.h"
+#include "error_detection.h"
 
 Test(str_is_num, normal_case)
 {

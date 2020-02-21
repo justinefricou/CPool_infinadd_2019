@@ -6,8 +6,8 @@
 */
 
 #include <stdlib.h>
-#include "include/number.h"
-#include "include/numbers_tools.h"
+#include "number.h"
+#include "numbers_tools.h"
 
 number *create_number(char *str, int nbr_length)
 {

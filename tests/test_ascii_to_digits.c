@@ -6,7 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-#include "../include/string_tools.h"
+#include "string_tools.h"
 
 Test(ascii_to_digits, unsigned_case)
 {
